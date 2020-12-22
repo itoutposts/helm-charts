@@ -37,7 +37,7 @@ jobs:
       - name: Helm repo lint
         uses: WyriHaximus/github-action-helm3@v2.0
         with:
-          exec: helm lint ./charts
+          exec: helm lint ./charts/*
       - name: Helm repo update
         uses: WyriHaximus/github-action-helm3@v2.0
         with:
