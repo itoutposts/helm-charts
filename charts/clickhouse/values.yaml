@@ -1,4 +1,4 @@
-# Configuration for the ClickHouse cluster to be started
+## Configuration for the ClickHouse cluster to be started
 clickhouse:
 
   # default cluster name
