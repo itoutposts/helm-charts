@@ -1,0 +1,27 @@
+apiVersion: v1
+entries:
+  clickhouse:
+  - apiVersion: v2
+    appVersion: "20.1"
+    created: "2020-12-22T10:36:53.826945+02:00"
+    description: Helm Chart for deploying a sharded and replicated ClickHouse cluster
+    digest: 23c4a7b4bfbe22e25108825e60b0b55a0e6cd2b9c95fe19cdc76251fe35ad5d2
+    home: https://gitlab.com/MatthiasLohr/clickhouse-helm-chart
+    icon: https://clickhouse.yandex/images/logo.png
+    keywords:
+    - clickhouse
+    maintainers:
+    - email: mail@mlohr.com
+      name: Matthias Lohr
+      url: https://mlohr.com/
+    - email: dorian@extrument.com
+      name: Dorian Cantzen
+      url: https://extrument.com/
+    name: clickhouse
+    sources:
+    - https://gitlab.com/MatthiasLohr/clickhouse-helm-chart
+    type: application
+    urls:
+    - https://github.com/itoutposts/helm-charts/clickhouse-1.0.1.tgz
+    version: 1.0.1
+generated: "2020-12-22T10:36:53.823329+02:00"
