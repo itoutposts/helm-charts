@@ -42,4 +42,9 @@ jobs:
         uses: WyriHaximus/github-action-helm3@v2.0
         with:
           exec: helm repo index --url https://github.com/itoutposts/helm-charts .
+      - name: Git
+        shell: bash
+      - id: Git status
+        run: git status
+        shell: bash
 
