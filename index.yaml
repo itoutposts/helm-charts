@@ -3,7 +3,27 @@ entries:
   clickhouse:
   - apiVersion: v2
     appVersion: "20.1"
-    created: "2020-12-22T10:36:53.826945+02:00"
+    created: "2020-12-22T12:34:53.498205+02:00"
+    description: Helm Chart for deploying a sharded and replicated ClickHouse cluster
+    digest: e5cae31212324010998d76e6bee4946a3307750351983f91c3719299bab37f77
+    home: https://github.com/itoutposts/helm-charts
+    icon: https://clickhouse.yandex/images/logo.png
+    keywords:
+    - clickhouse
+    maintainers:
+    - email: alllexandr@gmail.com
+      name: Aleksandr Zaichenko
+      url: https://itoutposts.github.io/helm-charts/
+    name: clickhouse
+    sources:
+    - https://github.com/itoutposts/helm-charts
+    type: application
+    urls:
+    - https://github.com/itoutposts/helm-charts/clickhouse-1.0.2.tgz
+    version: 1.0.2
+  - apiVersion: v2
+    appVersion: "20.1"
+    created: "2020-12-22T12:34:53.497495+02:00"
     description: Helm Chart for deploying a sharded and replicated ClickHouse cluster
     digest: 23c4a7b4bfbe22e25108825e60b0b55a0e6cd2b9c95fe19cdc76251fe35ad5d2
     home: https://gitlab.com/MatthiasLohr/clickhouse-helm-chart
@@ -24,4 +44,4 @@ entries:
     urls:
     - https://github.com/itoutposts/helm-charts/clickhouse-1.0.1.tgz
     version: 1.0.1
-generated: "2020-12-22T10:36:53.823329+02:00"
+generated: "2020-12-22T12:34:53.494361+02:00"

@@ -15,7 +15,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
+{{- $root := . -}}
 {{- range $shardIndex, $shard := .Values.clickhouse.shards }}
 {{- range $replicaIndex, $replica := .replicas }}
 ---
@@ -78,6 +78,14 @@ spec:
               mountPath: /etc/clickhouse-server/config.d/macros.xml
             - name: data
               mountPath: /var/lib/clickhouse
+      {{- if $root.Values.global.nodeSelector }}
+      nodeSelector:
+      {{ toYaml $root.Values.global.nodeSelector  | nindent 8 }}
+      {{- end }}
+      {{- if $root.Values.global.tolerations }}
+      tolerations:
+      {{ toYaml $root.Values.global.tolerations  | nindent 8 }}
+      {{- end}}
       volumes:
         - name: common-configuration
           configMap:
@@ -96,6 +104,7 @@ spec:
           {{- if $replica.storageType }}{{- if eq $replica.storageType "existingPersistentVolumeClaim" }}
             claimName: {{ $replica.existingPersistentVolumeClaimName }}
           {{- end }}{{ end }}
+
       affinity:
         podAntiAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:

@@ -1,3 +1,11 @@
+global:
+  nodeSelector:
+    worker_group: databases
+  tolerations:
+    - key: "app_type"
+      operator: "Equal"
+      value: "database"
+      effect: "NoSchedule"
 ## Configuration for the ClickHouse cluster to be started
 clickhouse:
 
@@ -21,11 +29,17 @@ clickhouse:
   defaultStorageClassName: default
   defaultStorageResourceRequest: 1Gi
 
-  # Shart configuration, see https://clickhouse.tech/docs/en/operations/table_engines/distributed/
+#   Shart configuration, see https://clickhouse.tech/docs/en/operations/table_engines/distributed/
   shards:
     - name: shard0
       replicas:
         - name: shard0-replica0
+          nodeSelector: { }
+          tolerations:
+            - key: "app_type"
+              operator: "Equal"
+              value: "databases"
+              effect: "NoSchedule"
           # storageType allows to define the kind of storage you want to assign. See below for additional configuration
           # - local                         - use local (host) directory
           # - persistentVolumeClaim         - use existing PersistentVolumeClaim
@@ -77,7 +91,6 @@ clickhouse:
     # internal - start single instance zookeeper with this helm chart (for development purposes)
     # external - use external available zookeeper servers (for production use)
     mode: internal
-
     # configuration for internal zookeeper instance
     internal:
       image: zookeeper:3.5
