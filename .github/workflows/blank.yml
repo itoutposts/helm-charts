@@ -41,7 +41,7 @@ jobs:
       - name: Helm repo update
         uses: WyriHaximus/github-action-helm3@v2.0
         with:
-          exec: helm repo index --url https://github.com/itoutposts/helm-charts .
+          exec: helm repo index --url https://itoutposts.github.io/helm-charts .
       - name: Git
         shell: bash
       - id: Git status

@@ -3,7 +3,7 @@ entries:
   clickhouse:
   - apiVersion: v2
     appVersion: "20.1"
-    created: "2021-06-07T19:46:05.777373+03:00"
+    created: "2021-06-10T09:32:25.715029+03:00"
     description: Helm Chart for deploying a sharded and replicated ClickHouse cluster
     digest: 407d0f9f5b0caa41d046a2313b8b361e2a03b33a3d019137570d3519845489ad
     home: https://github.com/itoutposts/helm-charts
@@ -19,11 +19,11 @@ entries:
     - https://github.com/itoutposts/helm-charts
     type: application
     urls:
-    - https://github.com/itoutposts/helm-charts/clickhouse-1.0.2.tgz
+    - https://itoutposts.github.io/helm-charts/clickhouse-1.0.2.tgz
     version: 1.0.2
   - apiVersion: v2
     appVersion: "20.1"
-    created: "2021-06-07T19:46:05.775518+03:00"
+    created: "2021-06-10T09:32:25.713781+03:00"
     description: Helm Chart for deploying a sharded and replicated ClickHouse cluster
     digest: 23c4a7b4bfbe22e25108825e60b0b55a0e6cd2b9c95fe19cdc76251fe35ad5d2
     home: https://gitlab.com/MatthiasLohr/clickhouse-helm-chart
@@ -42,12 +42,12 @@ entries:
     - https://gitlab.com/MatthiasLohr/clickhouse-helm-chart
     type: application
     urls:
-    - https://github.com/itoutposts/helm-charts/clickhouse-1.0.1.tgz
+    - https://itoutposts.github.io/helm-charts/clickhouse-1.0.1.tgz
     version: 1.0.1
   opendistro-es:
   - apiVersion: v1
     appVersion: 1.13.2
-    created: "2021-06-07T19:46:05.783457+03:00"
+    created: "2021-06-10T09:32:25.716473+03:00"
     description: Open Distro for Elasticsearch
     digest: a9e2d1762ef6e5bf058d2da11dd8084c5aa03df610717f704e0a128a5970bc93
     kubeVersion: ^1.10.0-0
@@ -60,6 +60,6 @@ entries:
     sources:
     - https://pages.git.viasat.com/ATG/charts
     urls:
-    - https://github.com/itoutposts/helm-charts/opendistro-es-1.13.2.tgz
+    - https://itoutposts.github.io/helm-charts/opendistro-es-1.13.2.tgz
     version: 1.13.2
-generated: "2021-06-07T19:46:05.774334+03:00"
+generated: "2021-06-10T09:32:25.71236+03:00"
