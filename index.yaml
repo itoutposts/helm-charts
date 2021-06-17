@@ -3,7 +3,7 @@ entries:
   clickhouse:
   - apiVersion: v2
     appVersion: "20.1"
-    created: "2021-06-10T09:32:25.715029+03:00"
+    created: "2021-06-17T12:36:57.221381+03:00"
     description: Helm Chart for deploying a sharded and replicated ClickHouse cluster
     digest: 407d0f9f5b0caa41d046a2313b8b361e2a03b33a3d019137570d3519845489ad
     home: https://github.com/itoutposts/helm-charts
@@ -23,7 +23,7 @@ entries:
     version: 1.0.2
   - apiVersion: v2
     appVersion: "20.1"
-    created: "2021-06-10T09:32:25.713781+03:00"
+    created: "2021-06-17T12:36:57.220746+03:00"
     description: Helm Chart for deploying a sharded and replicated ClickHouse cluster
     digest: 23c4a7b4bfbe22e25108825e60b0b55a0e6cd2b9c95fe19cdc76251fe35ad5d2
     home: https://gitlab.com/MatthiasLohr/clickhouse-helm-chart
@@ -44,10 +44,21 @@ entries:
     urls:
     - https://itoutposts.github.io/helm-charts/clickhouse-1.0.1.tgz
     version: 1.0.1
+  devops-operator:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2021-06-17T12:36:57.221863+03:00"
+    description: A Helm chart for Kubernetes
+    digest: 153f1cf5270dc79f44be35d85d800938506676dce2b1bdfcfa035b40d04dd3aa
+    name: devops-operator
+    type: application
+    urls:
+    - https://itoutposts.github.io/helm-charts/devops-operator-0.1.0.tgz
+    version: 0.1.0
   opendistro-es:
   - apiVersion: v1
     appVersion: 1.13.2
-    created: "2021-06-10T09:32:25.716473+03:00"
+    created: "2021-06-17T12:36:57.223156+03:00"
     description: Open Distro for Elasticsearch
     digest: a9e2d1762ef6e5bf058d2da11dd8084c5aa03df610717f704e0a128a5970bc93
     kubeVersion: ^1.10.0-0
@@ -62,4 +73,4 @@ entries:
     urls:
     - https://itoutposts.github.io/helm-charts/opendistro-es-1.13.2.tgz
     version: 1.13.2
-generated: "2021-06-10T09:32:25.71236+03:00"
+generated: "2021-06-17T12:36:57.220029+03:00"
